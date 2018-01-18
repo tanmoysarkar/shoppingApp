@@ -14,9 +14,9 @@ import SignIn from './components/user/signin';
 import SignUp from './components/user/signup';
 import Checkout from './components/shop/checkout';
 
-import '../web/css/style.css'
-import '../web/css/bootstrap.min.css'
-import '../web/css/font-awesome.min.css'
+import './css/style.css'
+import './css/bootstrap.min.css'
+import './css/font-awesome.min.css'
 
 class SiteMap extends React.Component{
   render() {
