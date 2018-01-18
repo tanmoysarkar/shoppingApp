@@ -1,6 +1,9 @@
 {
   "name": "website",
   "version": "1.0.0",
+  "engines": {
+    "node": "7.2.1"
+  },
   "dependencies": {
     "axios": "^0.17.1",
     "babel-core": "^6.26.0",
