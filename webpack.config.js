@@ -24,12 +24,10 @@ module.exports = {
             presets:['es2015', 'stage-0','react']
           }
        },
-       {
-        // Transform our own .css files with PostCSS and CSS-modules
-        test: /\.min.css$/,
-        exclude: /node_modules/,
-        use: ['style-loader', 'css-loader'],
-      }, 
+        {
+                test: ['./src/css/bootstrap.min.css'],
+                use: ExtractTextPlugin.extract("style-loader", "css-loader")
+            },
        {
         // Transform our own .css files with PostCSS and CSS-modules
         test: /\.css$/,
