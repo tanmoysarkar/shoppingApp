@@ -49,6 +49,9 @@ app.get('/user', function(req, res){
 	}
 	res.json(data)
 })
+app.get('/signup', function (req, res) {
+    res.sendFile(path.join(__dirname, 'public/signup.html'));
+});
 
 var API = require('./src/backend/api')
 app.use('/api', API)
