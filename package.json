@@ -53,5 +53,8 @@
     "eject": "react-scripts eject",
     "postinstall": "npm run build",
     "webpack": "webpack"
+  },
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^3.0.2"
   }
 }
