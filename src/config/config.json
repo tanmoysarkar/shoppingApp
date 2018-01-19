@@ -1,5 +1,5 @@
 {
 	"api":{
-		"root":"https://reactshoppingapp.herokuapp.com"
+		"root":"http://reactshoppingapp.herokuapp.com"
 	}
 }
