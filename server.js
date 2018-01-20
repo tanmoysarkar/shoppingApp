@@ -56,14 +56,14 @@ app.get('/user', function(req, res){
 var API = require('./src/backend/api')
 app.use('/api', API)
 
-if( process.argv[2] === 'dev'){	
-	app.use(express.static(path.join(__dirname, 'public')))
-}
-else{
-	app.use(express.static(path.join(__dirname, 'build')))
-}
+// if( process.argv[2] === 'dev'){	
+// 	app.use(express.static(path.join(__dirname, 'public')))
+// }
+// else{
+// 	app.use(express.static(path.join(__dirname, 'build')))
+// }
 
-app.get('/*', function (req, res) {
+app.get('*', function (req, res) {
     if( process.argv[2] === 'dev' ){
          res.sendFile(path.join(__dirname, 'public', 'index.html'));
     }
