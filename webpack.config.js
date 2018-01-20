@@ -68,11 +68,20 @@ module.exports = {
 /*   externals: {
     "sequelize": "require('sequelize')"
   },
-*/   devServer: {
-        publicPath: "/",
-        contentBase: "./public",
-        hot: true
-    },
+// */   devServer: {
+//         publicPath: "/",
+//         contentBase: "./public",
+//         hot: true
+//     },
+  devServer: {
+    contentBase: 'app/ui/www',
+    devtool: 'eval',
+    hot: true,
+    inline: true,
+    port: 3000,
+    outputPath: buildPath,
+    historyApiFallback: true,
+},
 
       plugins: [
         new webpack.HotModuleReplacementPlugin(),
