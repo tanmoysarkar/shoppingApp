@@ -30,7 +30,7 @@ class SiteMap extends React.Component{
           <Route exact path="/shopping-cart" component={ShoppingCart}/>
           <Route exact path="/profile" component={UserProfile}/>
           <Route exact path="/signin" component={SignIn}/>
-          <Route exact path="/signup" component={SignUp}/>
+          <Route exact path="signup" component={SignUp}/>
           <Route exact path="/checkout" component={Checkout}/>
           <Footer/>
         </div>
