@@ -65,10 +65,7 @@ module.exports = {
 
 //This config only to be used when components interact with models directly
 
-/*   externals: {
-    "sequelize": "require('sequelize')"
-  },
-// */   devServer: {
+//    devServer: {
 //         publicPath: "/",
 //         contentBase: "./public",
 //         hot: true
