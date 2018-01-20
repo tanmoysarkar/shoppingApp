@@ -65,20 +65,11 @@ module.exports = {
 
 //This config only to be used when components interact with models directly
 
-//    devServer: {
-//         publicPath: "/",
-//         contentBase: "./public",
-//         hot: true
-//     },
-  devServer: {
-    contentBase: 'app/ui/www',
-    devtool: 'eval',
-    hot: true,
-    inline: true,
-    port: 3000,
-//     outputPath: buildPath,
-    historyApiFallback: true,
-},
+   devServer: {
+        publicPath: "/",
+        contentBase: "./public",
+        hot: true
+    },
 
       plugins: [
         new webpack.HotModuleReplacementPlugin(),
