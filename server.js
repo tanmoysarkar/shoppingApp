@@ -63,6 +63,15 @@ else{
 	app.use(express.static(path.join(__dirname, 'build')))
 }
 
+app.get('/*', function (req, res) {
+    if( process.argv[2] === 'dev' ){
+         res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    }
+    else{
+         res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    }
+});
+
 const port = process.env.PORT || '8080'
 app.set('port', port)
 const server = http.createServer(app)
