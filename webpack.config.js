@@ -76,7 +76,7 @@ module.exports = {
     hot: true,
     inline: true,
     port: 3000,
-    outputPath: buildPath,
+//     outputPath: buildPath,
     historyApiFallback: true,
 },
 
